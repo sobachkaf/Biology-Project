@@ -1,0 +1,43 @@
+@use 'helpers' as *;
+
+:root{
+    --color-light: #FFFFFF;
+
+    --color-dark:  #00061C ;
+    --color-dark-10: #0A1334;
+    --color-dark-15: #0B1949;
+    --color-dark-20: #333333;
+    --color-dark-40: #666666;
+    --color-gray-50: #9290C3;
+    --color-gray-60: #4D5B89;
+    --color-border: #091029;
+    --color-hover: #42495F;
+    --color-tag-color: #343D5B;
+
+    --color-accent: #54C56F;
+    --color-red: #FF5500;
+
+    --gradient: 
+        linear-gradient(
+        45deg,
+        var(--color-dark-15) 64%,
+        var(--color-accent) 136%
+    )
+    ;
+
+    --shadow: 0 0 0 #{rem(3)} #191919;
+
+    --border: #{rem(1)} solid var(--color-border);
+
+    --font-family-base: 'Inter';
+    --font-family-accent: 'Kumbh Sans';
+    
+    --container-width: #{rem(1800)};
+    --container-padding-x:  #{rem(16)};
+
+    @include laptope{
+        --container-width: #{rem(1280)};
+    }
+
+    --transition-duration: 0.2s;
+}
