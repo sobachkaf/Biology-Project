@@ -913,6 +913,10 @@ button[arial-label]::before {
   }
 }
 
+.footer-border {
+  border-top: var(--border);
+}
+
 .soc1als--3-cols {
   width: 100%;
   max-width: 19.25rem;
@@ -1308,10 +1312,16 @@ button[arial-label]::before {
 }
 .card__preview, .card__body {
   padding: 5rem;
+  margin-right: 4.375rem;
 }
 @media (width <= 90.06125rem) {
   .card__preview, .card__body {
     padding: 3.75rem;
+  }
+}
+@media (width <= 30.06125rem) {
+  .card__preview, .card__body {
+    margin-right: 0.3125rem;
   }
 }
 .card__preview {
@@ -1737,6 +1747,12 @@ button[arial-label]::before {
   border-radius: 0.625rem;
   column-gap: 0.625rem;
 }
+@media (width <= 30.06125rem) {
+  .tabs__buttons--compact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .tabs__buttons--compact .tabs__button {
   padding-block: 1.125rem;
 }
@@ -1778,6 +1794,11 @@ button[arial-label]::before {
   color: var(--color-light);
   font-weight: 500;
   pointer-events: none;
+}
+@media (width <= 30.06125rem) {
+  .tabs__button {
+    margin: 0.625rem;
+  }
 }
 .tabs__content:not(.is-active) {
   display: none;
@@ -2944,6 +2965,26 @@ button[arial-label]::before {
   grid-template-rows: 0fr;
   transition-duration: 0.3s;
 }
+.accordion__content .accrodion__content-body-title {
+  color: var(--color-accent);
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  text-align: center;
+}
+.accordion__content .accordion__content-body-link {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+@media (any-hover: hover) {
+  .accordion__content .accordion__content-body-link:hover {
+    color: var(--color-red);
+  }
+}
+@media (any-hover: none) {
+  .accordion__content .accordion__content-body-link:active {
+    color: var(--color-red);
+  }
+}
 .accordion__content-inner {
   overflow: hidden;
 }
@@ -3016,6 +3057,41 @@ button[arial-label]::before {
   .error__subtitle:active {
     color: var(--color-accent);
     transition-duration: 0.3s;
+  }
+}
+
+.diagrams__title {
+  color: var(--color-accent);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+.diagrams__title-canvas {
+  color: var(--color-light);
+  text-align: center;
+  padding-top: 1.25rem;
+  padding-bottom: 2.5rem;
+}
+
+.canvas-margin {
+  margin-bottom: 6.25rem;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 43.75rem;
+  display: block;
+  margin: 0 auto;
+  background: #1e1e1e;
+  margin: 20px auto 40px;
+  padding: 1.25rem;
+  box-shadow: 0 0 0.625rem rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+@media (width <= 30.06125rem) {
+  canvas {
+    max-width: 21.875rem;
   }
 }
 

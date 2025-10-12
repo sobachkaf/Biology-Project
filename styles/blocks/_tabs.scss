@@ -30,6 +30,11 @@
             border-radius: rem(10);
             column-gap: rem(10);
 
+            @include mobile-s{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+
             .tabs__button{
                 padding-block: rem(18);
 
@@ -40,6 +45,7 @@
                 @include laptope{
                     padding-block: rem(14);
                 }
+
             }
         }
     }
@@ -66,6 +72,11 @@
             color: var(--color-light);
             font-weight: 500;
             pointer-events: none;
+        }
+
+        @include mobile-s{
+            
+            margin: rem(10);
         }
     }
 

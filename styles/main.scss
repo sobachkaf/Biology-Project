@@ -3,6 +3,7 @@
 @use "./fonst";
 @use "./utils";
 @use "./variables";
+
 @use './blocks/icon';
 @use './blocks/header';
 @use './blocks/logo';
@@ -50,7 +51,7 @@
 @use './blocks/contacts';
 @use './blocks/accordion';
 @use './blocks/error';
-
+@use './blocks/diagrams';
 
     // .header,
     // main > *:not(:last-child),

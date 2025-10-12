@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&display=swap" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <link rel="stylesheet" href="./styles/main.css">
     <script src="./scripts/main.js" type="module" defer></script>
+    <script src="./scripts/_diagrams.js" type="module" defer></script>
 </head>
 <body>
     
@@ -44,32 +46,29 @@
                             </li>
     
                             <li class="header__menu_item header__menu_item-border-bottom">
-                                <a href="./news.html" class="header__menu-link is-active">«Практика»</a>
+                                <a href="./practice.html" class="header__menu-link is-active">«Практика»</a>
                             </li>
 
                             <li class="header__menu_item header__menu_item-border-bottom">
-                                <a href="#classification" class="header__menu-link header__menu-link-accent">Классификация Стресса</a>
+                                <a href="#questionnaire" class="header__menu-link header__menu-link-accent">Анкетирование</a>
                             </li>
 
                             <li class="header__menu_item header__menu_item-border-bottom">
-                                <a href="#Forms-of-stress" class="header__menu-link header__menu-link-accent">Формы стресса</a>
+                                <a href="#Conclusion-and-recommendations" class="header__menu-link header__menu-link-accent">Заключение и рекомендации</a>
                             </li>
 
                             <li class="header__menu_item header__menu_item-border-bottom">
-                                <a href="#Types-of-stressors" class="header__menu-link header__menu-link-accent">Виды стрессоров</a>
+                                <a href="#chart-1" class="header__menu-link header__menu-link-accent">Диаграмма-1</a>
                             </li>
 
                             <li class="header__menu_item header__menu_item-border-bottom">
-                                <a href="#stages-of-adaptation" class="header__menu-link header__menu-link-accent">Cтадии приспособлении <br> к стрессу</a>
+                                <a href="#chart-2" class="header__menu-link header__menu-link-accent">Диаграмма-2</a>
                             </li>
 
                             <li class="header__menu_item header__menu_item-border-bottom">
-                                <a href="#Stress-phases" class="header__menu-link header__menu-link-accent">Фазы стресса</a>
+                                <a href="#chart-3" class="header__menu-link header__menu-link-accent">Диаграмма-3</a>
                             </li>
 
-                            <li class="header__menu_item header__menu_item-border-bottom">
-                                <a href="#General-information-about-stress-and-techniques" class="header__menu-link header__menu-link-accent">Общая информация о стрессе <br> и методиках.</a>
-                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -93,9 +92,571 @@
 
     <main>
         
+        <section class="section tabs" id="questionnaire" aria-labelledby="reports-title" data-js-tabs>
+            <header class="section__header">
+                <div class="section__header-inner container">
+                    <div class="section__header-info">
+                        <p class="section__subtitle tag">(5 - 7 - 10 классы)</p>
+                        <h2 class="section__title" id="reports-title">Анкетирование среди учащихся</h2>
+                    </div>
+                    <div class="section__actions">
+                        <div class="tabs__buttons tabs__buttons--compact" role="tablist" aria-labelledby="reports-title">
+                            <button class="tabs__button is-active" id="tab-1" type="button" role="tab" aria-controls="tabpanel-1" data-js-tabs-button aria-selected="true" >
+                                результаты
+                            </button>
+    
+                            <button class="tabs__button" id="tab-2" type="button" role="tab" aria-controls="tabpanel-2" data-js-tabs-button aria-selected="false" tabindex="-1">
+                                5-ые классы
+                            </button>
+    
+                            <button class="tabs__button" id="tab-3" type="button" role="tab" aria-controls="tabpanel-3" data-js-tabs-button aria-selected="false" tabindex="-1">
+                                7-ые классы
+                            </button>
+
+                            <button class="tabs__button" id="tab-4" type="button" role="tab" aria-controls="tabpanel-4" data-js-tabs-button aria-selected="false" tabindex="-1">
+                                10-ые классы
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="section__body">
+                <div class="tabs__body">
+                    <div class="tabs__content is-active" id="tabpanel-1" aria-labelledby="tab-1" tabindex="0" data-js-tabs-content>
+                        <div class="card__body" id="Tt">
+                            <div class="accordion-group">
+
+                                <div class="accordion tile">
+                                    <details class="accordion__details" name="faq" >
+                                        <summary class="accordion__summary">
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Общий ход иследования</span></h4>
+                                        </summary>
+                                    </details>
+
+                                    <div class="accordion__content" name="faq-1" role="definition">
+                                        <div class="accordion__content-inner">
+                                            <div class="accordion__content-body">
+                                                <p>В 2025 учебном году нами было проведено исследование, направленное
+                                                    на изучение уровня стресса у учащихся разных возрастных категорий.
+                                                    Целью нашего исследования стало установление факторов влияющих на
+                                                    развитие стрессовых реакций у учащихся.
+                                                    В ходе наших наблюдений и анализа мы заметили, что возраст напрямую
+                                                    влияет на то, как проявляется стресс. Процесс перехода из одного звена
+                                                    в другое повышает уровень тревожности и эмоционального напряжения у
+                                                    школьников.
+                                                    Так, с переходом в среднее звено у учащихся меняется социум. Ребенок
+                                                    сталкивается с рядом изменений в социальной среде: смена учителей,
+                                                    появление новых предметов, кабинетная система. Изменение формы
+                                                    общения с учителями: учителя становятся строже и требовательнее, нет
+                                                    эмоциональной связи как с классным руководителем в начальном звене.
+                                                    Среднее звено считается переходным периодом, потому что он лежит
+                                                    между “детством” и “подростковым возрастом”. В этом возрасте
+                                                    происходят гормональные сдвиги, начинается половое созревание.
+                                                    Наблюдаются изменения в учебную сферу, которые непосредственно
+                                                    влияют на организм учащегося: с появлением новых предметов,
+                                                    увеличивается их количество.
+                                                    Старшее звено определяется экзаменационной нагрузкой, углублением
+                                                    учебного процесса. Повышается ответственность за свое будущее. Перед
+                                                    учащимся стоит выбор, который определяет дальнейшую взрослую
+                                                    жизнь.
+                                                    Для того, чтобы определить какие возрастные группы подвергаются
+                                                    стрессу чаще всего, мы провели исследования среди учащихся разных
+                                                    классов.
+                                                    Результаты наших исследований помогли проследить возрастную
+                                                    динамику проявления стресса, определить факторы, способствующие его
+                                                    появлению и выявить пути профилактики стрессовых состояний среди
+                                                    учащихся. Мы провели анкетирование «Анализ стрессовых ситуаций» с
+                                                    целью изучения и анализа физиологических и психологических аспектов
+                                                    стресса, влияющих на состояние школьников.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content" id="tabpanel-2" aria-labelledby="tab-2" tabindex="0" data-js-tabs-content>
+                        <div class="card__body" id="Tt">
+                            <div class="accordion-group">
+
+                                <div class="accordion tile">
+                                    <details class="accordion__details" name="faq" >
+                                        <summary class="accordion__summary">
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Результаты 5-ых классов</span></h4>
+                                        </summary>
+                                    </details>
+
+                                    <div class="accordion__content" name="faq-1" role="definition">
+                                        <div class="accordion__content-inner">
+                                            <div class="accordion__content-body">
+
+                                                <div class="accrodion__content-body-title">
+                                                    <a href="#chart-1" class="accordion__content-body-link">Смотрите диаграмму 1</a>
+                                                </div>
+
+                                                <p>Результаты данного анкетирования показали, что среди учащихся пятых
+                                                    классов на вопрос “Как часто вы волнуетесь” большая часть учеников
+                                                    (54%) выбрали вариант ответа иногда; 19% часто волнуются; 21% редко,
+                                                    и только 6% выбрали ответ никогда.
+                                                    По результатам первого вопроса в анкетировании можно сделать вывод о
+                                                    том, что пятиклассники регулярно испытывают стресс, но его уровень не
+                                                    достигает постоянного уровня эмоциональной напряженности.
+                                                    Чаще всего причиной стресса являлись учеба и оценивание: Тесты и
+                                                    контрольные работы (29%), плохие оценки (29%). Результаты
+                                                    свидетельствуют о том, что главными факторами, вызывающими стресс у
+                                                    школьников, являются - страх ошибки и социальное давление.
+                                                    Одной из самых распространенных реакций на стрессовую ситуацию
+                                                    является учащенное сердцебиение (30%) и страх (21%). Менее
+                                                    распространенными реакциями являются Злость (8%), желание плакать
+                                                    (13%), боль в животе и головная боль (9%). Дрожь в теле -
+                                                    дополнительный вариант, который выбрали 3% учащихся.
+                                                    Можно отметить, что в силу возраста пятиклассники не всегда понимают,
+                                                    что с ними происходит. Детям сложно связывать физические ощущения с
+                                                    эмоциональными состояниями, вследствие чего 16 процентов учащихся
+                                                    выбрали вариант ответа “ Ничего не чувствую”, а большинство
+                                                    испытывают страх.
+                                                    Большинство учеников, а именно 79% признались в том, что во время
+                                                    стресса ничего не делают и замыкаются в себе. Реже всего встречается
+                                                    вариант ответа “плачу” (17%) и всего 4% обращаются за помощью к
+                                                    родителям или учителям. Это дает понять, что школьники начального
+                                                    звена испытывают страх попросить помощь взрослых.
+                                                    На вопрос “что помогает восстановиться” большая часть детей, а именно
+                                                    55% написали, что общение с близкими помогает справиться со стрессом.
+                                                    Из выше написанного, можно сделать вывод о том, что большинство
+                                                    детей не понимают, что с ними происходит, и редко обращаются за
+                                                    помощью, предпочитая замкнуться в себе. Это свидетельствует о
+                                                    важности учить детей справляться со стрессом. В совокупности с этим,
+                                                    общение с близкими помогает большинству восстанавливаться — это
+                                                    указывает на то, что дети нуждаются в эмоциональной поддержке и
+                                                    внимании родителей.
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content" id="tabpanel-3" aria-labelledby="tab-3" tabindex="0" data-js-tabs-content>
+                        <div class="card__body" id="Tt">
+                            <div class="accordion-group">
+
+                                <div class="accordion tile">
+                                    <details class="accordion__details" name="faq" >
+                                        <summary class="accordion__summary">
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Результаты 7-ых классов</span></h4>
+                                        </summary>
+                                    </details>
+
+                                    <div class="accordion__content" name="faq-1" role="definition">
+                                        <div class="accordion__content-inner">
+                                            <div class="accordion__content-body">
+
+                                                <div class="accrodion__content-body-title">
+                                                    <a href="#chart-2" class="accordion__content-body-link">Смотрите диаграмму 2</a>
+                                                </div>
+
+                                                <p>
+                                                    На вопрос как часто учащиеся испытывают стресс большинство (46%)
+                                                    семиклассников выбрали вариант ответа “часто”. Еще 18% - иногда и
+                                                    редко, а 19% - почти никогда. Исходя из этих данных, можно сделать
+                                                    вывод о том, что в отличии от начального звена, стресс у среднего звена
+                                                    имеет более регулярный характер. Так же как и в младших классах,
+                                                    встречающимися часто стрессорами среднего звена являются
+                                                    контрольные работы (35%) и плохие оценки (35%). Меньше всего
+                                                    встречается варианты ответа, когда отвечают у доски (23%) и “общение с
+                                                    одноклассниками” (6%). Стресс у семиклассников главным образом
+                                                    связан с учебной нагрузкой.
+                                                    Наиболее распространенная реакция на стрессовые ситуации является
+                                                    учащенное сердцебиение (28%). Также часто встречаются грусть и
+                                                    замкнутость (22 %). Реже всего выбирают такие варианты ответа, как
+                                                    головная боль и боль в животе (12%), злость (9%) и ощущение нехватки
+                                                    воздуха (8%). Высокий процент тех, кто “ничего не чувствует,
+                                                    свидетельствует об эмоциональной незрелости.
+                                                    На вопрос как школьники справляются со стрессом одним из самых
+                                                    распространенных является ответ “справляюсь сам” (43 %), а четверть
+                                                    учеников (26%) не боятся говорить о своем состоянии и делятся со
+                                                    взрослыми. 18% испытывают грусть, плачут, оставшаяся часть, а именно
+                                                    13%, выбирают другой вариант, это указывает на то, что ученики
+                                                    среднего звена справляются со стрессом самостоятельно, но тем не
+                                                    менее осознают важность помощи взрослых.
+                                                    Социальная поддержка и хобби помогают справиться со стрессом, но
+                                                    особо важными являются коммуникация (23%) и активный отдых. Важно
+                                                    отметить, что семиклассники используют онлайн игры (17%) для
+                                                    снижения уровня стресса.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content" id="tabpanel-4" aria-labelledby="tab-4" tabindex="0" data-js-tabs-content>
+                        <div class="card__body" id="Tt">
+                            <div class="accordion-group">
+
+                                <div class="accordion tile">
+                                    <details class="accordion__details" name="faq" >
+                                        <summary class="accordion__summary">
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Результаты 10-ых классов</span></h4>
+                                        </summary>
+                                    </details>
+
+                                    <div class="accordion__content" name="faq-1" role="definition">
+                                        <div class="accordion__content-inner">
+                                            <div class="accordion__content-body">
+
+                                                <div class="accrodion__content-body-title">
+                                                    <a href="#chart-3" class="accordion__content-body-link">Смотрите диаграмму 3</a>
+                                                </div>
+
+                                                <p>
+                                                    Больше половины учащихся десятых классов сталкиваются со стрессом
+                                                    часто и иногда (31%). Еще 21% выбрали вариант ответа “редко”, и только
+                                                    17% отметили, что никогда не сталкиваются со стрессом. Можно
+                                                    отметить, что каждый третий ученик испытывает стресс регулярно. По
+                                                    большей части, причинами стресса у старшеклассников являются
+                                                    контрольные и проверочные работы (51%). Также отмечают “ответы на
+                                                    уроке” (21%). Меньше всего способствуют возникновению стресса плохие
+                                                    оценки (15%) и трудности общения с одноклассниками (13%).
+                                                    Наиболее типичными реакциями являются учащенное сердцебиение
+                                                    (27%), грусть и отстраненность (20%), агрессия (18%). Меньше всего
+                                                    встречаются трудности с дыханием (17%) и отсутствие симптомов (18%).
+                                                    Стресс влечет за собой как физические, так и эмоциональные
+                                                    проявления.
+                                                    Большая часть (38%) предпочитают отстраняться и проводить время в
+                                                    одиночестве, 28% учащихся делятся с друзьями, и только 6% обращаются
+                                                    ко взрослым.
+                                                    Общение (25%) является основным способом снижения стресса у
+                                                    старшеклассников. Второстепенными методами снижения стресса
+                                                    являются музыка и игры (14%), а также еда и спорт (12%). Можно
+                                                    отметить, что старшеклассники обращаются к психологу за помощью
+                                                    (2%) и практикуют дыхательные упражнения (7%).
+                                                    Из вышеперечисленной информации, можно сделать вывод о том, что
+                                                    стресс носит регулярный характер в жизни старшеклассников.
+                                                    Основными причинами, способствующими появлению стресса, являются
+                                                    подготовка к экзаменам, повышенная ответственность и большая
+                                                    информационная нагрузка. Наиболее эффективным способом снятия
+                                                    стресса остается живое общение и поддержка близких.
+                                                    Общий вывод анкетирования
+                                                    Проведенное анкетирование показало, что стресс является
+                                                    неотъемлемой частью жизни школьников любых возрастов, но его
+                                                    проявления и ответные реакции отличаются в зависимости от возраста.
+                                                    Наиболее часто подвержены стрессовым ситуациям старшеклассники,
+                                                    что связано с повышенной ответственностью и учебной нагрузкой.
+                                                    Ответы старшеклассников свидетельствуют о большей эмоциональной
+                                                    зрелости. Это может подтвердить то, что по сравнению с младшим и
+                                                    средним звеном, на вопрос - “как вы справляетесь со стрессом”, среди
+                                                    старшеклассников появляются ответы, как: обращение к психологу,
+                                                    принятие успокоительных и практика дыхательных упражнений.
+                                                    У всех возрастных групп, а особенно у младшего и среднего звена,
+                                                    наиболее распространенными причинами возникновения стресса
+                                                    являются контрольные работы и оценки, что показывает зависимость
+                                                    школьников от учебных результатов. Сердцебиение стало одним из
+                                                    самых часто встречаемых факторов во время стресса, что подтверждает
+                                                    физиологическое влияние стресса на организм человека.
+                                                    Младшие классы чаще всего испытывают страх и непонимание своего
+                                                    состояния в силу возрастной незрелости. Они реже всего обращаются за
+                                                    помощью к взрослым, боясь осуждения. Однако именно у них самым
+                                                    эффективным способом восстановления отказалось общение с близкими
+                                                    (55%), что говорит о том, как важна поддержка родителей и близких для
+                                                    детей.
+                                                    Семиклассники чаще справляются со стрессом самостоятельно или
+                                                    уходят в себя, что отражает переходный возраст и стремление к
+                                                    самостоятельности.
+                                                    Общим для всех остаётся то, что стресс связан с учёбой и
+                                                    сопровождается физическими и психологическими проявлениями.
+                                                    Таким образом, школьникам необходима эмоциональная поддержка,
+                                                    обучение навыкам стрессоустойчивости и создание доверительной
+                                                    атмосферы в школе и семье.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section tabs" id="Conclusion-and-recommendations" aria-labelledby="reports-title" data-js-tabs>
+            <header class="section__header">
+                <div class="section__header-inner container">
+                    <div class="section__header-info">
+                        <p class="section__subtitle tag">Заключение</p>
+                        <h2 class="section__title" id="reports-title">И рекомендации</h2>
+                    </div>
+                    <div class="section__actions">
+                        <div class="tabs__buttons tabs__buttons--compact" role="tablist" aria-labelledby="reports-title">
+                            <button class="tabs__button is-active" id="tab-1" type="button" role="tab" aria-controls="tabpanel-1" data-js-tabs-button aria-selected="true" >
+                                Заключение
+                            </button>
+    
+                            <button class="tabs__button" id="tab-2" type="button" role="tab" aria-controls="tabpanel-2" data-js-tabs-button aria-selected="false" tabindex="-1">
+                                Учащимся
+                            </button>
+    
+                            <button class="tabs__button" id="tab-3" type="button" role="tab" aria-controls="tabpanel-3" data-js-tabs-button aria-selected="false" tabindex="-1">
+                                Родителям
+                            </button>
+
+                            <button class="tabs__button" id="tab-4" type="button" role="tab" aria-controls="tabpanel-4" data-js-tabs-button aria-selected="false" tabindex="-1">
+                                Учителям
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="section__body">
+                <div class="tabs__body">
+                    <div class="tabs__content is-active" id="tabpanel-1" aria-labelledby="tab-1" tabindex="0" data-js-tabs-content>
+                        <div class="card__body" id="Tt">
+                            <div class="accordion-group">
+
+                                <div class="accordion tile">
+                                    <details class="accordion__details" name="faq" >
+                                        <summary class="accordion__summary">
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Заключение</span></h4>
+                                        </summary>
+                                    </details>
+
+                                    <div class="accordion__content" name="faq-1" role="definition">
+                                        <div class="accordion__content-inner">
+                                            <div class="accordion__content-body">
+                                                <p>На основе изученной литературы и анализа анкетирования учащихся 5, 7
+                                                    и 10 классов было установлено, что стресс является неотъемлемой
+                                                    частью жизни школьников всех возрастов. Однако его частота, причины и
+                                                    способы преодоления различаются в зависимости от возраста.
+                                                    Результаты анкетирования подтвердили нашу гипотезу: наибольший
+                                                    уровень стресса наблюдается у школьников старшего звена. Это связано
+                                                    с повышенной учебной нагрузкой из за экзаменов и ответственностью за
+                                                    выбор своей будущей карьеры.
+                                                    Однако со стрессовыми ситуациями сталкиваются учащиеся всех
+                                                    возрастов. Поэтому важно формировать у школьников навыки
+                                                    стрессоустойчивости, поддерживать благоприятную атмосферу в школе и
+                                                    семье, а также повышать уровень осведомленности о влиянии стресса на
+                                                    организм человека. Исходя из этого вывода, результатом нашей работы
+                                                    стала разработка сайта, которая способствует повышению уровню
+                                                    осведомленности о влиянии стрессов на организм человека. Также, на
+                                                    страницах сайта школьники могут найти различные методики, которые
+                                                    помогут развить стрессоустойчивость.
+                                                    Тем самым, наше исследование имеет не только теоретическую, но и
+                                                    практическую значимость.
+                                                    Таким образом, стресс оказывает комплексное влияние на организм
+                                                    человека, проявляясь как на физиологическом, так и психологическом
+                                                    уровне. Важно вовремя распознать стресс и грамотно управлять им, не
+                                                    давая возможности перерасти в хронический стресс.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content" id="tabpanel-2" aria-labelledby="tab-2" tabindex="0" data-js-tabs-content>
+                        <div class="card__body" id="Tt">
+                            <div class="accordion-group">
+
+                                <div class="accordion tile">
+                                    <details class="accordion__details" name="faq" >
+                                        <summary class="accordion__summary">
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Рекомендации учащимся </span></h4>
+                                        </summary>
+                                    </details>
+
+                                    <div class="accordion__content" name="faq-1" role="definition">
+                                        <div class="accordion__content-inner">
+                                            <div class="accordion__content-body">
+                                                <p>
+                                                    Быть бдительным к своему здоровью; не игнорировать тревожность и
+                                                    раздражительность. Научиться пользоваться временем; чередовать учебу
+                                                    и отдых, не перегружать себя, оставлять время на прогулки, сон и хобби
+                                                    Делиться мыслями с друзьями и близкими; поддержка важная часть
+                                                    преодоления стресса. Уделять время себе; сон, движение и питание- база
+                                                    для устойчивости к стрессу; недосып влияет на здоровье больше, чем
+                                                    перегрузка учебой. Не бояться просить помощи у преподавателей;
+                                                    обращаться за поддержкой это не слабость, а зрелый шаг
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content" id="tabpanel-3" aria-labelledby="tab-3" tabindex="0" data-js-tabs-content>
+                        <div class="card__body" id="Tt">
+                            <div class="accordion-group">
+
+                                <div class="accordion tile">
+                                    <details class="accordion__details" name="faq" >
+                                        <summary class="accordion__summary">
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Рекомендации родителям</span></h4>
+                                        </summary>
+                                    </details>
+
+                                    <div class="accordion__content" name="faq-1" role="definition">
+                                        <div class="accordion__content-inner">
+                                            <div class="accordion__content-body">
+                                                <p>
+                                                    Учитывать возрастные особенности подростка в условиях стресса;
+                                                    помогать справляться с внутренними конфликтами, даже если вам
+                                                    кажутся «мелочью». Создайте дома атмосферу эмоциональной
+                                                    безопасности; чтобы ребенок не боялся поделиться эмоциональными
+                                                    переживаниями. Развивать у подростка навыки саморегуляции и
+                                                    рефлексии; помогать анализировать свою реакцию на стресс. Быть
+                                                    внимательным к здоровью ребенку, при хронической усталости,
+                                                    тревожности следует обратиться к специалисту.
+                                                    Будьте эмоционально вовлечены в жизни ребенка; проводить больше
+                                                    совместно время.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content" id="tabpanel-4" aria-labelledby="tab-4" tabindex="0" data-js-tabs-content>
+                        <div class="card__body" id="Tt">
+                            <div class="accordion-group">
+
+                                <div class="accordion tile">
+                                    <details class="accordion__details" name="faq" >
+                                        <summary class="accordion__summary">
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Рекомендации учителям предметника</span></h4>
+                                        </summary>
+                                    </details>
+
+                                    <div class="accordion__content" name="faq-1" role="definition">
+                                        <div class="accordion__content-inner">
+                                            <div class="accordion__content-body">
+                                                <p>
+                                                    Относиться с пониманием к ученикам, проявляющим раздражительность,
+                                                    тревожность — это может быть признаком стресса, а не плохого
+                                                    поведения. Поддерживать учеников; создавать уютную психологическую
+                                                    атмосферу. Избегать информационных нагрузок, учитывать потенциал
+                                                    каждого учащегося. Поддерживать учеников за старания, не только за
+                                                    успех; признавать старания и принимать ошибки помогает ученику
+                                                    справится со страхом, способствует устойчивости к стрессу. Держать
+                                                    баланс между поддержкой и требовательностью; ученик должен
+                                                    понимать, что может обратиться за поддержкой к учителю
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section tabs" id="chart-1" aria-labelledby="reports-title" data-js-tabs>
+            <header class="section__header">
+                <div class="section__header-inner container">
+                    <div class="section__header-info">
+                        <h2 class="section__title" id="reports-title">Диаграмма 1</h2>
+                    </div>
+            
+                </div>
+            </header>
+
+                <div class="diagrams">
+                    <h2 class="diagrams__title" >5 класс</h2>
+
+                    <h3 class="diagrams__title-canvas" >1. Как часто ты волнуешься?</h3>
+                    <canvas id="chart5_1"></canvas>
+
+                    <h3 class="diagrams__title-canvas" >2. Когда ты волнуешься больше всего?</h3>
+                    <canvas id="chart5_2"></canvas>
+
+                    <h3 class="diagrams__title-canvas" >3. Что ты чувствуешь, когда волнуешься?</h3>
+                    <canvas id="chart5_3"></canvas>
+
+                    <h3 class="diagrams__title-canvas" >4. Что ты делаешь, когда волнуешься?</h3>
+                    <canvas id="chart5_4"></canvas>
+
+                    <h3 class="diagrams__title-canvas" >5. Что помогает тебе снова стать весёлым?</h3>
+                    <canvas class="canvas" id="chart5_5"></canvas>
+                </div>
+        </section>
+
+        <section class="section tabs"  id="chart-2"  aria-labelledby="reports-title" data-js-tabs>
+            <header class="section__header">
+                <div class="section__header-inner container">
+                    <div class="section__header-info">
+                        <h2 class="section__title" id="reports-title">Диаграмма 2</h2>
+                    </div>
+            
+                </div>
+            </header>
+
+                <div class="diagrams">
+                    <h2 class="diagrams__title" >7 класс</h2>
+
+                    <h3 class="diagrams__title-canvas">1. Ты часто волнуешься?</h3>
+                    <canvas id="chart7_1"></canvas>
+
+                    <h3 class="diagrams__title-canvas" >2. В какие моменты чаще всего испытываешь стресс?</h3>
+                    <canvas id="chart7_2"></canvas>
+
+                    <h3 class="diagrams__title-canvas" >3. Что ты испытываешь, когда переживаешь?</h3>
+                    <canvas id="chart7_3"></canvas>
+
+                    <h3 class="diagrams__title-canvas" >4. Как ты справляешься со стрессом?</h3>
+                    <canvas id="chart7_4"></canvas>
+
+                    <h3 class="diagrams__title-canvas" >5. Что помогает успокоиться после стресса?</h3>
+                    <canvas id="chart7_5"></canvas>
+                </div>
+        </section>
+
+        <section class="section tabs"  id="chart-3" aria-labelledby="reports-title" data-js-tabs>
+            <header class="section__header">
+                <div class="section__header-inner container">
+                    <div class="section__header-info">
+                        <h2 class="section__title" id="reports-title">Диаграмма 3</h2>
+                    </div>
+                </div>
+            </header>
+
+                <div class="diagrams">
+                    <h2 class="diagrams__title">10 класс</h2>
+
+                    <h3 class="diagrams__title-canvas" >1. Как часто испытываете стресс?</h3>
+                    <canvas id="chart10_1"></canvas>
+
+                    <h3 class="diagrams__title-canvas" >2. Какие ситуации чаще всего вызывают стресс?</h3>
+                    <canvas id="chart10_2"></canvas>
+
+                    <h3 class="diagrams__title-canvas">3. Что чувствуешь, когда переживаешь?</h3>
+                    <canvas id="chart10_3"></canvas>
+
+                    <h3 class="diagrams__title-canvas">4. Какие меры предпринимаешь в стрессовой ситуации?</h3>
+                    <canvas id="chart10_4"></canvas>
+
+                    <h3 class="diagrams__title-canvas">5. Что помогает справляться со стрессом?</h3>
+                    <canvas class="canvas-margin" id="chart10_5"></canvas>
+                </div>
+        </section>
+
     </main>
     
-    <footer class="footer">
+    <footer class="footer footer-border">
         <div class="footer__inner container">
 
             <div class="footer__extra">

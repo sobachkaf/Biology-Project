@@ -1,0 +1,39 @@
+@use '../helpers' as *;
+
+.diagrams{
+    &__title{
+        color: var(--color-accent);
+        padding-top: rem(40);
+        padding-bottom: rem(40);
+        text-align: center;
+    }
+
+    &__title-canvas{
+        color: var(--color-light);
+        text-align: center;
+        padding-top: rem(20);
+        padding-bottom: rem(40);
+    }
+}
+
+.canvas-margin{
+    margin-bottom: rem(100);
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-width: rem(700); // можно задать лимит
+    display: block;
+    margin: 0 auto;
+    background: #1e1e1e;
+    margin: 20px auto 40px;
+    padding: rem(20);
+    box-shadow: 0 0 #{rem(10)} rgba(255,255,255,0.1);
+    border-radius: 12px;
+
+    @include mobile-s{
+        max-width: rem(350);
+    }
+}
+

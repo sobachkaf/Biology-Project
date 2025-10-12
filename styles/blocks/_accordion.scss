@@ -77,6 +77,21 @@
         grid-template-rows: 0fr;
         transition-duration: 0.3s;
         
+        .accrodion__content-body-title{
+            color: var(--color-accent);
+            padding-top: rem(5);
+            padding-bottom: rem(5);
+            text-align: center;
+        }
+
+        .accordion__content-body-link{
+            padding-top: rem(20);
+            padding-bottom: rem(20);
+
+            @include hover{
+                color: var(--color-red);
+            }
+        }
 
         &-inner{
             overflow: hidden;

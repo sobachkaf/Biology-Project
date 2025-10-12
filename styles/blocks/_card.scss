@@ -9,9 +9,14 @@
     &__preview,
     &__body{
         padding: rem(80);
+        margin-right: rem(70);
 
         @include laptope{
             padding: rem(60);
+        }
+
+        @include mobile-s{
+            margin-right: rem(5);
         }
     }
 
