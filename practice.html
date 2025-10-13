@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/main.css">
     <script src="./scripts/main.js" type="module" defer></script>
     <script src="./scripts/Diagrams.js" type="module" defer></script>
+    <script src="./scripts/Languges.js" defer></script>
 </head>
 <body>
     
@@ -42,31 +43,31 @@
                     <nav class="header__menu">
                         <ul class="header__menu-list">
                             <li class="header__menu_item">
-                                <a href="./index.html" class="header__menu-link">«Теория»</a>
+                                <a href="./index.html" class="header__menu-link" data-js-lang="theory">«Теория»</a>
                             </li>
     
                             <li class="header__menu_item header__menu_item-border-bottom">
-                                <a href="./practice.html" class="header__menu-link is-active">«Практика»</a>
+                                <a href="./practice.html" class="header__menu-link is-active" data-js-lang="practice">«Практика»</a>
                             </li>
 
                             <li class="header__menu_item header__menu_item-border-bottom">
-                                <a href="#questionnaire" class="header__menu-link header__menu-link-accent">Анкетирование</a>
+                                <a href="#questionnaire" class="header__menu-link header__menu-link-accent" data-js-lang="burger1">Анкетирование</a>
                             </li>
 
                             <li class="header__menu_item header__menu_item-border-bottom">
-                                <a href="#Conclusion-and-recommendations" class="header__menu-link header__menu-link-accent">Заключение и рекомендации</a>
+                                <a href="#Conclusion-and-recommendations" class="header__menu-link header__menu-link-accent" data-js-lang="burger2">Заключение и рекомендации</a>
                             </li>
 
                             <li class="header__menu_item header__menu_item-border-bottom">
-                                <a href="#chart-1" class="header__menu-link header__menu-link-accent">Диаграмма-1</a>
+                                <a href="#chart-1" class="header__menu-link header__menu-link-accent" data-js-lang="burger3">Диаграмма-1</a>
                             </li>
 
                             <li class="header__menu_item header__menu_item-border-bottom">
-                                <a href="#chart-2" class="header__menu-link header__menu-link-accent">Диаграмма-2</a>
+                                <a href="#chart-2" class="header__menu-link header__menu-link-accent" data-js-lang="burger4">Диаграмма-2</a>
                             </li>
 
                             <li class="header__menu_item header__menu_item-border-bottom">
-                                <a href="#chart-3" class="header__menu-link header__menu-link-accent">Диаграмма-3</a>
+                                <a href="#chart-3" class="header__menu-link header__menu-link-accent" data-js-lang="burger5">Диаграмма-3</a>
                             </li>
 
                         </ul>
@@ -77,11 +78,11 @@
                     <nav class="header__menu">
                         <ul class="header__menu__list">
                             <li class="header__menu_item">
-                                <a href="./index.html" class="header__menu-link">«Теория»</a>
+                                <a href="./index.html" class="header__menu-link" data-js-lang="theory">«Теория»</a>
                             </li>
     
                             <li class="header__menu_item">
-                                <a href="./practice.html" class="header__menu-link is-active">«Практика»</a>
+                                <a href="./practice.html" class="header__menu-link is-active" data-js-lang="practice">«Практика»</a>
                             </li>
                         </ul>
                     </nav>
@@ -105,24 +106,24 @@
             <header class="section__header">
                 <div class="section__header-inner container">
                     <div class="section__header-info">
-                        <p class="section__subtitle tag">(5 - 7 - 10 классы)</p>
-                        <h2 class="section__title" id="reports-title">Анкетирование среди учащихся</h2>
+                        <p class="section__subtitle tag" data-js-lang="class">(5 - 7 - 10 классы)</p>
+                        <h2 class="section__title" id="reports-title" data-js-lang="classs">Анкетирование среди учащихся</h2>
                     </div>
                     <div class="section__actions">
                         <div class="tabs__buttons tabs__buttons--compact" role="tablist" aria-labelledby="reports-title">
-                            <button class="tabs__button is-active" id="tab-1" type="button" role="tab" aria-controls="tabpanel-1" data-js-tabs-button aria-selected="true" >
+                            <button class="tabs__button is-active" id="tab-1" type="button" role="tab" aria-controls="tabpanel-1" data-js-tabs-button aria-selected="true" data-js-lang="buutton">
                                 результаты
                             </button>
     
-                            <button class="tabs__button" id="tab-2" type="button" role="tab" aria-controls="tabpanel-2" data-js-tabs-button aria-selected="false" tabindex="-1">
+                            <button class="tabs__button" id="tab-2" type="button" role="tab" aria-controls="tabpanel-2" data-js-tabs-button aria-selected="false" tabindex="-1" data-js-lang="buuttonn" >
                                 5-ые классы
                             </button>
     
-                            <button class="tabs__button" id="tab-3" type="button" role="tab" aria-controls="tabpanel-3" data-js-tabs-button aria-selected="false" tabindex="-1">
+                            <button class="tabs__button" id="tab-3" type="button" role="tab" aria-controls="tabpanel-3" data-js-tabs-button aria-selected="false" tabindex="-1" data-js-lang="buuttonnn" >
                                 7-ые классы
                             </button>
 
-                            <button class="tabs__button" id="tab-4" type="button" role="tab" aria-controls="tabpanel-4" data-js-tabs-button aria-selected="false" tabindex="-1">
+                            <button class="tabs__button" id="tab-4" type="button" role="tab" aria-controls="tabpanel-4" data-js-tabs-button aria-selected="false" tabindex="-1" data-js-lang="buuttonnnn" >
                                 10-ые классы
                             </button>
                         </div>
@@ -139,13 +140,13 @@
                                 <div class="accordion tile">
                                     <details class="accordion__details" name="faq" >
                                         <summary class="accordion__summary">
-                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Общий ход иследования</span></h4>
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1" data-js-lang="Thegeneralcourseoftheinvestigation">Общий ход иследования</span></h4>
                                         </summary>
                                     </details>
 
                                     <div class="accordion__content" name="faq-1" role="definition">
                                         <div class="accordion__content-inner">
-                                            <div class="accordion__content-body">
+                                            <div class="accordion__content-body" data-js-lang="Thegeneralcourseoftheinvestigationto">
                                                 <p>В 2025 учебном году нами было проведено исследование, направленное
                                                     на изучение уровня стресса у учащихся разных возрастных категорий.
                                                     Целью нашего исследования стало установление факторов влияющих на
@@ -193,7 +194,7 @@
                                 <div class="accordion tile">
                                     <details class="accordion__details" name="faq" >
                                         <summary class="accordion__summary">
-                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Результаты 5-ых классов</span></h4>
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1" data-js-lang="fivethgraderesults">Результаты 5-ых классов</span></h4>
                                         </summary>
                                     </details>
 
@@ -202,10 +203,10 @@
                                             <div class="accordion__content-body">
 
                                                 <div class="accrodion__content-body-title">
-                                                    <a href="#chart-1" class="accordion__content-body-link">Смотрите диаграмму 1</a>
+                                                    <a href="#chart-1" class="accordion__content-body-link" data-js-lang="fivethgraderesultsto">Смотрите диаграмму 1</a>
                                                 </div>
 
-                                                <p>Результаты данного анкетирования показали, что среди учащихся пятых
+                                                <p data-js-lang="fivethgraderesultstoo" >Результаты данного анкетирования показали, что среди учащихся пятых
                                                     классов на вопрос “Как часто вы волнуетесь” большая часть учеников
                                                     (54%) выбрали вариант ответа иногда; 19% часто волнуются; 21% редко,
                                                     и только 6% выбрали ответ никогда.
@@ -256,7 +257,7 @@
                                 <div class="accordion tile">
                                     <details class="accordion__details" name="faq" >
                                         <summary class="accordion__summary">
-                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Результаты 7-ых классов</span></h4>
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1" data-js-lang="seventhgraderesults">Результаты 7-ых классов</span></h4>
                                         </summary>
                                     </details>
 
@@ -265,10 +266,10 @@
                                             <div class="accordion__content-body">
 
                                                 <div class="accrodion__content-body-title">
-                                                    <a href="#chart-2" class="accordion__content-body-link">Смотрите диаграмму 2</a>
+                                                    <a href="#chart-2" class="accordion__content-body-link" data-js-lang="seventhgraderesultsto">Смотрите диаграмму 2</a>
                                                 </div>
 
-                                                <p>
+                                                <p data-js-lang="seventhgraderesultstoo" >
                                                     На вопрос как часто учащиеся испытывают стресс большинство (46%)
                                                     семиклассников выбрали вариант ответа “часто”. Еще 18% - иногда и
                                                     редко, а 19% - почти никогда. Исходя из этих данных, можно сделать
@@ -313,7 +314,7 @@
                                 <div class="accordion tile">
                                     <details class="accordion__details" name="faq" >
                                         <summary class="accordion__summary">
-                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Результаты 10-ых классов</span></h4>
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1" data-js-lang="tenthgraderesults">Результаты 10-ых классов</span></h4>
                                         </summary>
                                     </details>
 
@@ -322,10 +323,10 @@
                                             <div class="accordion__content-body">
 
                                                 <div class="accrodion__content-body-title">
-                                                    <a href="#chart-3" class="accordion__content-body-link">Смотрите диаграмму 3</a>
+                                                    <a href="#chart-3" class="accordion__content-body-link" data-js-lang="tenthgraderesultsto">Смотрите диаграмму 3</a>
                                                 </div>
 
-                                                <p>
+                                                <p data-js-lang="tenthgraderesultstoo" >
                                                     Больше половины учащихся десятых классов сталкиваются со стрессом
                                                     часто и иногда (31%). Еще 21% выбрали вариант ответа “редко”, и только
                                                     17% отметили, что никогда не сталкиваются со стрессом. Можно
@@ -400,24 +401,24 @@
             <header class="section__header">
                 <div class="section__header-inner container">
                     <div class="section__header-info">
-                        <p class="section__subtitle tag">Заключение</p>
-                        <h2 class="section__title" id="reports-title">И рекомендации</h2>
+                        <p class="section__subtitle tag" data-js-lang="Conclusion">Заключение</p>
+                        <h2 class="section__title" id="reports-title" data-js-lang="Conclusionn">И рекомендации</h2>
                     </div>
                     <div class="section__actions">
                         <div class="tabs__buttons tabs__buttons--compact" role="tablist" aria-labelledby="reports-title">
-                            <button class="tabs__button is-active" id="tab-1" type="button" role="tab" aria-controls="tabpanel-1" data-js-tabs-button aria-selected="true" >
+                            <button class="tabs__button is-active" id="tab-1" type="button" role="tab" aria-controls="tabpanel-1" data-js-tabs-button aria-selected="true" data-js-lang="Conclusionnn" >
                                 Заключение
                             </button>
     
-                            <button class="tabs__button" id="tab-2" type="button" role="tab" aria-controls="tabpanel-2" data-js-tabs-button aria-selected="false" tabindex="-1">
+                            <button class="tabs__button" id="tab-2" type="button" role="tab" aria-controls="tabpanel-2" data-js-tabs-button aria-selected="false" tabindex="-1" data-js-lang="Conclusionnnn">
                                 Учащимся
                             </button>
     
-                            <button class="tabs__button" id="tab-3" type="button" role="tab" aria-controls="tabpanel-3" data-js-tabs-button aria-selected="false" tabindex="-1">
+                            <button class="tabs__button" id="tab-3" type="button" role="tab" aria-controls="tabpanel-3" data-js-tabs-button aria-selected="false" tabindex="-1" data-js-lang="Conclusionnnnn">
                                 Родителям
                             </button>
 
-                            <button class="tabs__button" id="tab-4" type="button" role="tab" aria-controls="tabpanel-4" data-js-tabs-button aria-selected="false" tabindex="-1">
+                            <button class="tabs__button" id="tab-4" type="button" role="tab" aria-controls="tabpanel-4" data-js-tabs-button aria-selected="false" tabindex="-1" data-js-lang="Conclusionnnnnn">
                                 Учителям
                             </button>
                         </div>
@@ -434,14 +435,14 @@
                                 <div class="accordion tile">
                                     <details class="accordion__details" name="faq" >
                                         <summary class="accordion__summary">
-                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Заключение</span></h4>
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1" data-js-lang="Conclusion">Заключение</span></h4>
                                         </summary>
                                     </details>
 
                                     <div class="accordion__content" name="faq-1" role="definition">
                                         <div class="accordion__content-inner">
                                             <div class="accordion__content-body">
-                                                <p>На основе изученной литературы и анализа анкетирования учащихся 5, 7
+                                                <p data-js-lang="Conclusion" >На основе изученной литературы и анализа анкетирования учащихся 5, 7
                                                     и 10 классов было установлено, что стресс является неотъемлемой
                                                     частью жизни школьников всех возрастов. Однако его частота, причины и
                                                     способы преодоления различаются в зависимости от возраста.
@@ -479,14 +480,14 @@
                                 <div class="accordion tile">
                                     <details class="accordion__details" name="faq" >
                                         <summary class="accordion__summary">
-                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Рекомендации учащимся </span></h4>
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1" data-js-lang="Recommendationsforstudents">Рекомендации учащимся </span></h4>
                                         </summary>
                                     </details>
 
                                     <div class="accordion__content" name="faq-1" role="definition">
                                         <div class="accordion__content-inner">
                                             <div class="accordion__content-body">
-                                                <p>
+                                                <p data-js-lang="Recommendationsforstudentsto" >
                                                     Быть бдительным к своему здоровью; не игнорировать тревожность и
                                                     раздражительность. Научиться пользоваться временем; чередовать учебу
                                                     и отдых, не перегружать себя, оставлять время на прогулки, сон и хобби
@@ -511,14 +512,14 @@
                                 <div class="accordion tile">
                                     <details class="accordion__details" name="faq" >
                                         <summary class="accordion__summary">
-                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Рекомендации родителям</span></h4>
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1" data-js-lang="Recommendationsforparenst">Рекомендации родителям</span></h4>
                                         </summary>
                                     </details>
 
                                     <div class="accordion__content" name="faq-1" role="definition">
                                         <div class="accordion__content-inner">
                                             <div class="accordion__content-body">
-                                                <p>
+                                                <p data-js-lang="Recommendationsforparenstto" >
                                                     Учитывать возрастные особенности подростка в условиях стресса;
                                                     помогать справляться с внутренними конфликтами, даже если вам
                                                     кажутся «мелочью». Создайте дома атмосферу эмоциональной
@@ -545,14 +546,14 @@
                                 <div class="accordion tile">
                                     <details class="accordion__details" name="faq" >
                                         <summary class="accordion__summary">
-                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1">Рекомендации учителям предметника</span></h4>
+                                            <h4 class="accordion__title h6"><span role="term" aria-details="faq-1" data-js-lang="Recommendationsforteacher">Рекомендации учителям предметника</span></h4>
                                         </summary>
                                     </details>
 
                                     <div class="accordion__content" name="faq-1" role="definition">
                                         <div class="accordion__content-inner">
                                             <div class="accordion__content-body">
-                                                <p>
+                                                <p data-js-lang="Recommendationsforteacherto" >
                                                     Относиться с пониманием к ученикам, проявляющим раздражительность,
                                                     тревожность — это может быть признаком стресса, а не плохого
                                                     поведения. Поддерживать учеников; создавать уютную психологическую
@@ -578,28 +579,28 @@
             <header class="section__header">
                 <div class="section__header-inner container">
                     <div class="section__header-info">
-                        <h2 class="section__title" id="reports-title">Диаграмма 1</h2>
+                        <h2 class="section__title" id="reports-title"  data-js-lang="Diagramone">Диаграмма 1</h2>
                     </div>
             
                 </div>
             </header>
 
                 <div class="diagrams">
-                    <h2 class="diagrams__title" >5 класс</h2>
+                    <h2 class="diagrams__title" data-js-lang="D" >5 класс</h2>
 
-                    <h3 class="diagrams__title-canvas" >1. Как часто ты волнуешься?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Dd" >1. Как часто ты волнуешься?</h3>
                     <canvas id="chart5_1"></canvas>
 
-                    <h3 class="diagrams__title-canvas" >2. Когда ты волнуешься больше всего?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Ddd" >2. Когда ты волнуешься больше всего?</h3>
                     <canvas id="chart5_2"></canvas>
 
-                    <h3 class="diagrams__title-canvas" >3. Что ты чувствуешь, когда волнуешься?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Dddd" >3. Что ты чувствуешь, когда волнуешься?</h3>
                     <canvas id="chart5_3"></canvas>
 
-                    <h3 class="diagrams__title-canvas" >4. Что ты делаешь, когда волнуешься?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Ddddd" >4. Что ты делаешь, когда волнуешься?</h3>
                     <canvas id="chart5_4"></canvas>
 
-                    <h3 class="diagrams__title-canvas" >5. Что помогает тебе снова стать весёлым?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Dddddd"  >5. Что помогает тебе снова стать весёлым?</h3>
                     <canvas class="canvas" id="chart5_5"></canvas>
                 </div>
         </section>
@@ -608,28 +609,28 @@
             <header class="section__header">
                 <div class="section__header-inner container">
                     <div class="section__header-info">
-                        <h2 class="section__title" id="reports-title">Диаграмма 2</h2>
+                        <h2 class="section__title" id="reports-title" data-js-lang="Diagramon">Диаграмма 2</h2>
                     </div>
             
                 </div>
             </header>
 
                 <div class="diagrams">
-                    <h2 class="diagrams__title" >7 класс</h2>
+                    <h2 class="diagrams__title" data-js-lang="T" >7 класс</h2>
 
-                    <h3 class="diagrams__title-canvas">1. Ты часто волнуешься?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Tt">1. Ты часто волнуешься?</h3>
                     <canvas id="chart7_1"></canvas>
 
-                    <h3 class="diagrams__title-canvas" >2. В какие моменты чаще всего испытываешь стресс?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Ttt" >2. В какие моменты чаще всего испытываешь стресс?</h3>
                     <canvas id="chart7_2"></canvas>
 
-                    <h3 class="diagrams__title-canvas" >3. Что ты испытываешь, когда переживаешь?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Tttt" >3. Что ты испытываешь, когда переживаешь?</h3>
                     <canvas id="chart7_3"></canvas>
 
-                    <h3 class="diagrams__title-canvas" >4. Как ты справляешься со стрессом?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Ttttt" >4. Как ты справляешься со стрессом?</h3>
                     <canvas id="chart7_4"></canvas>
 
-                    <h3 class="diagrams__title-canvas" >5. Что помогает успокоиться после стресса?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Tttttt" >5. Что помогает успокоиться после стресса?</h3>
                     <canvas id="chart7_5"></canvas>
                 </div>
         </section>
@@ -638,27 +639,27 @@
             <header class="section__header">
                 <div class="section__header-inner container">
                     <div class="section__header-info">
-                        <h2 class="section__title" id="reports-title">Диаграмма 3</h2>
+                        <h2 class="section__title" id="reports-title" data-js-lang="Diagramo">Диаграмма 3</h2>
                     </div>
                 </div>
             </header>
 
                 <div class="diagrams">
-                    <h2 class="diagrams__title">10 класс</h2>
+                    <h2 class="diagrams__title" data-js-lang="M">10 класс</h2>
 
-                    <h3 class="diagrams__title-canvas" >1. Как часто испытываете стресс?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Mm" >1. Как часто испытываете стресс?</h3>
                     <canvas id="chart10_1"></canvas>
 
-                    <h3 class="diagrams__title-canvas" >2. Какие ситуации чаще всего вызывают стресс?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Mmm" >2. Какие ситуации чаще всего вызывают стресс?</h3>
                     <canvas id="chart10_2"></canvas>
 
-                    <h3 class="diagrams__title-canvas">3. Что чувствуешь, когда переживаешь?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Mmmm" >3. Что чувствуешь, когда переживаешь?</h3>
                     <canvas id="chart10_3"></canvas>
 
-                    <h3 class="diagrams__title-canvas">4. Какие меры предпринимаешь в стрессовой ситуации?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Mmmmm" >4. Какие меры предпринимаешь в стрессовой ситуации?</h3>
                     <canvas id="chart10_4"></canvas>
 
-                    <h3 class="diagrams__title-canvas">5. Что помогает справляться со стрессом?</h3>
+                    <h3 class="diagrams__title-canvas" data-js-lang="Mmmmmm">5. Что помогает справляться со стрессом?</h3>
                     <canvas class="canvas-margin" id="chart10_5"></canvas>
                 </div>
         </section>
