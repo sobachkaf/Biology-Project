@@ -73,7 +73,7 @@
                     </nav>
                 </div>
 
-                <div class="header__menu-visible-mobile">
+                <div class="header__menu-visible-mobile hidden-mobile">
                     <nav class="header__menu">
                         <ul class="header__menu__list">
                             <li class="header__menu_item">
@@ -85,7 +85,16 @@
                             </li>
                         </ul>
                     </nav>
-                </div>               
+                </div>
+                
+                <div class="header__languages" data-js-lang-container>
+                    <button class="lang-btn main" data-lang="ru" data-js-lang-main>🇷🇺 RU</button>
+                    <div class="lang-dropdown" data-js-lang-dropdown>
+                        <button class="lang-btn" data-lang="kk">🇰🇿 KK</button>
+                        <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+                        <button class="lang-btn" data-lang="ru">🇷🇺 RU</button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
