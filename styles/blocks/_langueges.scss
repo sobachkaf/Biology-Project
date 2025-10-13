@@ -1,0 +1,46 @@
+
+@use '../helpers' as *;
+
+
+.header__languages {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .lang-btn {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  
+  .lang-btn:hover {
+    background: #444;
+  }
+  
+  .lang-dropdown {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: #1a1a1a;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  .header__languages.active .lang-dropdown {
+    display: flex;
+  }
+  
+  .lang-btn.active {
+    background: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    transform: scale(1.05);
+  }
