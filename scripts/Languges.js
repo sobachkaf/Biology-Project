@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
           //* header
           theory: "«Теория»",
           practice: "«Практика»",
+          illustration:"«Иллюстрация»",
           classification: "Классификация стресса",
           forms: "Формы стресса",
           types: "Виды стрессоров",
@@ -191,6 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
           //* header
           theory: "«Теория»",
           practice: "«Тәжірибе»",
+          illustration:"«Иллюстрация»",
           classification: "Стрестің жіктелуі",
           forms: "Стрестің түрлері",
           types: "Стрессорлардың түрлері",
@@ -369,6 +371,7 @@ document.addEventListener("DOMContentLoaded", () => {
           //* header
           theory: "“Theory”",
           practice: "“Practice”",
+          illustration:"«Illustration»",
           classification: "Classification of Stress",
           forms: "Forms of Stress",
           types: "Types of Stressors",
