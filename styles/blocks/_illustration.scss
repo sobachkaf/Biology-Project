@@ -132,6 +132,14 @@
 	background-position: center;
 	background-size: cover;
 
+	&-big{
+		width: rem(700);
+
+		@include mobile{
+			width: rem(470);
+		}
+	}
+
 	&__right{
 		margin-left: rem(150);
 		margin-right: rem(-100);

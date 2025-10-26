@@ -3280,6 +3280,14 @@ canvas {
   background-position: center;
   background-size: cover;
 }
+.frame-media-big {
+  width: 43.75rem;
+}
+@media (width <= 47.99875rem) {
+  .frame-media-big {
+    width: 29.375rem;
+  }
+}
 .frame-media__right {
   margin-left: 9.375rem;
   margin-right: -6.25rem;
