@@ -256,6 +256,11 @@ video.frame-media_left {
 		margin-left: rem(150);
 		font-size: rem(12);
 	}
+
+	@include mobile-s{
+		margin-left: rem(90);
+		font-size: rem(12);
+	}
 }
 
 .frame__span{

@@ -3412,6 +3412,12 @@ video.frame-media_left {
     font-size: 0.75rem;
   }
 }
+@media (width <= 30.06125rem) {
+  .frame__p {
+    margin-left: 5.625rem;
+    font-size: 0.75rem;
+  }
+}
 
 .frame__span {
   color: var(--color-red);

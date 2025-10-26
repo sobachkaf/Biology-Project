@@ -4,6 +4,7 @@ $laptope: 1440.98;
 $tablet: 1023.98;
 $mobile: 767.98;
 $mobile-s: 480.98;
+$mobile-ss: 400.98;
 
 @mixin laptope-above{
     @media(width > rem($laptope)){
@@ -49,6 +50,18 @@ $mobile-s: 480.98;
 
 @mixin mobile-s{
     @media(width <= rem($mobile-s)){
+        @content;
+    }
+}
+
+@mixin mobile-ss-above{
+    @media(width > rem($mobile-ss)){
+        @content;
+    }
+}
+
+@mixin mobile-ss{
+    @media(width <= rem($mobile-ss)){
         @content;
     }
 }
