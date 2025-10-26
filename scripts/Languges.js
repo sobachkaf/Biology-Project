@@ -172,6 +172,18 @@ document.addEventListener("DOMContentLoaded", () => {
           Mmmmm:"4. Какие меры предпринимаешь в стрессовой ситуации?",
           Mmmmmm:"5. Что помогает справляться со стрессом?",
 
+          //* illustration 
+          illFirstTitle:"Мы проделали огромную работу, делая этот проект",
+          illFirstDescription:"Чтобы перейти на основной сайт нажмите на текст <span class=frame__span>Основной сайт</span> в правом верхнем углу",
+          illWorkWithTeacher:"Работа с учителем",
+          illWorkWithTeacherr:"Но важно отметить, что учитель помогал нам не очень сильно, большинство работы мы сделали сами",
+          illСlassSurvey:"Опрос классов",
+          illСlassSurveyy:"Так же для проекта мы опросили <br> <span class=frame__span>5-ые</span> <span class=frame__span>7-ые</span> <span class= frame__span>10-ые</span> классы <br> на фото 7-ые классы",
+          illTen:"Опрос 10-ых классов",
+          illFive:"Опрос 5-ых классов",
+          illMainJob:"Ну и конечно основную работу мы делали дома,состовляя нужные вопросы для опроса и искали нужную информацию по плану проекта",
+          illMainWebSite:"Основной <br> сайт",
+
 
         },
       
@@ -339,7 +351,17 @@ document.addEventListener("DOMContentLoaded", () => {
           Mmmmm:"4. Стресстік жағдайда қандай шаралар қолданасыз?",
           Mmmmmm:"5. Стрессті жеңуге не көмектеседі?",
 
-
+          //* illustration 
+          illFirstTitle:"Біз бұл жобаны жүзеге асыруда үлкен жұмыс жасадық",
+          illFirstDescription:"Негізгі сайтқа өту үшін жоғарғы оң жақ бұрыштағы <span class=frame__span>негізгі сайт</span> мәтінін басыңыз",
+          illWorkWithTeacher:"Мұғаліммен жұмыс",
+          illWorkWithTeacherr:"Бірақ мұғалім бізге көп көмектеспегенін атап өту маңызды, біз көп жұмысты өзіміз жасадық",
+          illСlassSurvey:"Сынып сауалнамасы",
+          illСlassSurveyy:"Сондай-ақ, жоба үшін біз 7-ші сыныптардың фотосуретіндегі <br> <span class=frame__span>5-ші </span> <span class=frame__span>7-ші</span> <span class= frame__span>10-шы</span> классы <br> сыныптарға сауалнама жүргіздік",
+          illTen:"10-сынып сауалнамасы",
+          illFive:"5-сынып сауалнамасы",
+          illMainJob:"Әрине,біз үйде негізгі жұмыс жасадық, сауалнамаға қажетті сұрақтар қойып, жоба жоспары бойынша қажетті ақпаратты іздедік",
+          illMainWebSite:"негізгі <br> сайт",
 
         },
       
@@ -507,8 +529,17 @@ document.addEventListener("DOMContentLoaded", () => {
           Mmmmm:"4. What measures do you take in a stressful situation?",
           Mmmmmm:"5. What helps you cope with stress?",
 
-
-
+          //* illustration 
+          illFirstTitle:"We have done a lot of work on this project.",
+          illFirstDescription:"To go to the main website, click on the text <span class=frame__span>Main Website</span> in the top right corner",
+          illWorkWithTeacher:"Working with a teacher",
+          illWorkWithTeacherr:"But it's important to note that the teacher didn't help us much, and we did most of the work ourselves.",
+          illСlassSurvey:"Class survey",
+          illСlassSurveyy:"For the project, we also surveyed <br> <span class=frame__span>5th</span> <span class=frame__span>7th</span> <span class= frame__span>10th</span> классы <br> grade 7 students in the photo.",
+          illTen:"Survey of 10th grades",
+          illFive:"Survey of 5th grades",
+          illMainJob:"Of course, we did most of the work at home, creating the necessary survey questions and searching for the information we needed for our project plan.",
+          illMainWebSite:"Main <br> Website",
         }
       };
   
